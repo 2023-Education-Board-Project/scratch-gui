@@ -46,6 +46,11 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import esp32IconURL from './esp32/esp32.png';
+import esp32InsetIconURL from './esp32/esp32-small.svg';
+import esp32ConnectionIconURL from './esp32/esp32-illustration.svg';
+import esp32ConnectionSmallIconURL from './esp32/esp32-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +322,34 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
+    {
+        name: 'ESP32 with FreeRTOS',
+        extensionId: 'esp32',
+        collaborator: 'KMU',
+        iconURL: esp32IconURL,
+        insetIconURL: esp32InsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar orci vel libero luctus, a tincidunt velit scelerisque."
+                id="gui.extension.esp32.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        connectionIconURL: esp32ConnectionIconURL,
+        connectionSmallIconURL: esp32ConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar orci vel libero luctus, a tincidunt velit scelerisque."
+                id="gui.extension.esp32.connectingMessage"
+            />
+        ),
+        helpLink: 'https://github.com/2023-Education-Board-Project'
+    },
 ];
